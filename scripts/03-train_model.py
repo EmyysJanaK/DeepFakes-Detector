@@ -18,7 +18,7 @@ print('TensorFlow version: ', tf.__version__)
 #else:
 #    print("No GPU found")
 
-dataset_path = '.\\split_dataset\\'
+dataset_path = os.path.join("data", "split_dataset")
 
 tmp_debug_path = '.\\tmp_debug'
 print('Creating Directory: ' + tmp_debug_path)

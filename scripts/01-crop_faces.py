@@ -11,7 +11,8 @@ tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 # print(physical_devices)
 # tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-base_path = '.\\train_sample_videos\\'
+
+base_path = os.path.join("data", "train_sample_videos")
 
 def get_filename_only(file_path):
     file_basename = os.path.basename(file_path)

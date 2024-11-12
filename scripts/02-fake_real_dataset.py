@@ -5,8 +5,9 @@ import shutil
 import numpy as np
 import splitfolders
 
-base_path = '.\\train_sample_videos\\'
-dataset_path = '.\\prepared_dataset\\'
+
+base_path = os.path.join("data", "train_sample_videos")
+dataset_path = os.path.join("data", "prepared_dataset")
 print('Creating Directory: ' + dataset_path)
 os.makedirs(dataset_path, exist_ok=True)
 
